@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>People's Voice</title>
+      <!-- css -->
+      <link rel="stylesheet" href="C:\Users\H P PC\Desktop\Phantom Coders\style.css">
+      <meta name="viewport" content="width=device-widtnh, initial-scale=1.0">
+   </head>
+
+   <body>
+      <div class="wrapper">
+        <img src="C:\Users\H P PC\Desktop\Phantom Coders\gov logo.jpg" alt="Government logo" style=" height: auto; align-tracks: center;">
+         <div class="title-text">
+            <div class="title userlogin">
+               User Login
+            </div>
+            <div class="title officallogin">
+               Official Login
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="userlogin" checked>
+               <input type="radio" name="slide" id="officiallogin">
+               <label for="userlogin" class="slide userlogin">User Login</label>
+               <label for="officiallogin" class="slide officiallogin">Offical Login</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+
+               <form action="#" class="userlogin">
+                <div class="field">
+                    <input type="text" placeholder="Enter name" required>
+                 </div>
+                  <div class="field">
+                     <input type="email" placeholder="Email Address" required>
+                  </div>
+
+
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                        <a href="C:\Users\H P PC\Desktop\Phantom Coders\Category.html">
+                          <button type="submit"> Next
+                        </a>
+                  </div>
+               </form>  
+
+               <form action="#" class="officiallogin">
+                  <div class="field">
+                     <input type="text" placeholder="Enter name" required>
+                  </div>
+                  <div class="field">
+                     <input type="email" placeholder="Enter Email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Enter password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <a href="#">
+                     <button type="submit" >Submit 
+                     </a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const userloginText = document.querySelector(".title-text .userlogin");
+         const userloginForm = document.querySelector("form.userlogin");
+         const userloginBtn = document.querySelector("label.userlogin");
+         const officialloginBtn = document.querySelector("label.officiallogin");
+         const officialloginLink = document.querySelector("form .officiallogin-link a");
+         officialloginBtn.onclick = (()=>{
+           userloginForm.style.marginLeft = "-50%";
+           userloginText.style.marginLeft = "-50%";
+         });
+         userloginBtn.onclick = (()=>{
+           userloginForm.style.marginLeft = "0%";
+           userloginText.style.marginLeft = "0%";
+         });
+         officialloginLink.onclick = (()=>{
+           officialloginBtn.click();
+           return false;
+         });
+         
+      </script>
+   </body>
+</html>

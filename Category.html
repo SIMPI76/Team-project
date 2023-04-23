@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Category</title>
+</head>
+
+<body>
+    <div class ="page"> 
+        <div  class ="field">
+            <div class ="select-policy">
+                <form action="#" name="userlogin">
+                    <a href="https://www.india.gov.in/national-logistics-policy"> <img src="C:\Users\H P PC\Desktop\Phantom Coders\Logistics.jpg" alt="logistic policy img" height="150" width="300" id="object1"> </a>
+                    <a href="https://udyamregistration.gov.in/Government-India/Ministry-MSME-registration.htm"> <img src="C:\Users\H P PC\Desktop\Phantom Coders\labour.jpg" alt="labour policy img" height="150" width="300" id="object2"></a>
+                    <a href="https://www.india.gov.in/spotlight/rashtriya-jal-jeevan-kosh"> <img src="C:\Users\H P PC\Desktop\Phantom Coders\water.jpg" alt="water policy img" height="150" width="300" id="object3"></a>
+                    <br>
+              
+                <select name="Policies" id="Policies">
+                    <option value="#"  selected>Select Category</option>
+                    <option value="C:\Users\H P PC\Desktop\Phantom Coders\logistic.html"  > <b>Logstic Policy</b> </option>
+                    <option value="C:\Users\H P PC\Desktop\Phantom Coders\labour.html"  > <b>Labour Policy</b> </option>
+                    <option value="C:\Users\H P PC\Desktop\Phantom Coders\water.html"  > <b>Water Policy</b> </option>
+                </select> 
+            </form>
+            <script>
+                var urlMenu =document.getElementById("Policies");
+                urlMenu.onchange = function()
+                {
+                    var useroption = this.options[this.selectedIndex];
+                    if (useroption.value !="nothing")
+                    {
+                        window.open(useroption.value,"logistic labour water"," ");
+                    }
+                }
+            </script>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
